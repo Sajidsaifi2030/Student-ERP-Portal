@@ -1,0 +1,293 @@
+/*-----Login Card-----*/
+
+.login-card {
+
+    width: 400px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0px 25px 70px rgba(0, 0, 0, 0.5);
+
+    /*--Start Hidden--*/
+
+    opacity: 0;
+
+    visibility: hidden;
+    
+    transform: translateY(50px);
+
+    scale: 0.9;
+
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+
+}
+
+/*----Login Page Animation----*/
+
+.login-card.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateX(0) scale(1);
+
+}
+
+/*---Lamp Off---*/
+
+.lamp-glow {
+
+    position: absolute;
+
+    top: 20;
+
+    left: -5px;
+
+    width: 20%;
+
+    height:200%;
+
+    border-radius: 50%;
+
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) , rgba(255, 255, 255, 0) 40%, transparent 60%);
+
+    opacity: 0;
+
+    transform: scale(0.5);
+
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+}
+
+/*---Lamp On---*/
+
+.lamp.on .lamp-glow {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+    animation: lamp-glow 1s infinite alternate;
+
+}
+
+@keyframes lamp-glow {
+
+    from {
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+    to {
+
+        transform: scale(1.2);
+
+        opacity: 0.5;
+
+    }
+
+}
+
+/*---Lamp Shadow---*/
+
+.lamp-shadow {
+
+    position: absolute;
+
+    top: 50px;
+
+    left: 30%;
+
+    width: 160%;
+
+    height: 70px;
+
+    border-radius: 100px 100px 15px 15px;
+
+    background: #777
+
+}
+
+
+/*---Light on Shadow---*/
+
+.lamp.on .lamp-shadow {
+
+    background: #fffcd8;
+
+    box-shadow: 0px 0px 20px #fffbd0, 0px 0px 50px #fffbd0, 0px 0px 90px rgba(255, 245, 185, 0.5);
+
+}
+
+/*---Stand---*/
+
+.lamp-stand {
+
+    position: absolute;
+
+    top: 115px;
+
+    left: 105px;
+
+    width: 90px;
+
+    height: 110px;
+
+    background: #777;
+
+    transition: 5s;
+
+}
+
+.lamp.on .lamp-stand {
+
+    background: #ddd;
+
+}
+
+/*---Lamp Base---*/
+
+.lamp-base {
+
+    position: absolute;
+
+    top: 210px;
+
+    left: 65px;
+
+    width: 90px;
+
+    height: 20px;
+
+    background: #777;
+
+    border-radius: 10px;
+
+    transition: 0.5s;
+
+}
+
+.lamp.on .lamp-base {
+
+    background: #ddd;
+
+}
+
+/*---Pull String---*/
+
+.lamp-string {
+
+    position: absolute;
+
+    top: 110px;
+
+    right: 20%;
+
+    width: 2px;
+
+    height: 70px;
+
+    background: #777;
+
+    transition: 0.5s;
+
+}
+
+.lamp.on .lamp-string {
+
+    background: #aaa;
+
+}
+
+/*---Lamp Switch---*/
+
+.lamp-switch {
+
+    position: absolute;
+
+    top: 180px;
+
+    right: 20%;
+
+    width: 20px;
+
+    height: 20px;
+
+    border: none;
+
+    background: #777;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: 0.5s;
+
+    box-shadow: 0px 0px 5px rgba(251, 251, 251, 0.5);
+
+}
+
+/*---Lamp Switch On---*/
+
+.lamp.on .lamp-switch {
+
+    background: #ffd28a;
+
+    box-shadow: 0px 0px 10px #ffd28a, 0px 0px 20px #ffd28a;
+
+    transform: translateY(5px);
+
+}
+
+/*---Lamp Switch Hover---*/
+
+.lamp-switch:hover {
+
+   transform: scale(1.2);
+
+}
+
+/*---Login Options---*/
+
+.login-options {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+
+    color: #aaa;
+
+}
+
+.login-options a {
+
+    color: #8cff9c;
+
+    text-decoration: none;
+
+}
+
+body{
+
+    background-color: #886d6d;
+}

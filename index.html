@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ERP Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <!--=========STUDENT ERP LOGIN==========-->
+    
+
+    <header>
+
+        <h1>🎓 Student ERP</h1>
+
+        <p> Student Login Portal</p>
+
+    </header>
+
+    <main>
+
+        <!---LAMP--->
+
+        <section>
+
+            <h2> 💡Lamp</h2>
+
+            <p> 
+                Tap the lamp light button to open the login system.
+            </p>
+
+            <button>
+
+                Turn ON Lamp
+
+            </button>
+        
+        </section>
+
+        <!---Login System--->
+
+        <section>
+
+            <h2> Welcome Back</h2>
+
+            <p>
+                Login to your Student ERP account
+            </p>
+
+        <form>
+
+            <label for="studentId">
+                Student ID/ Email
+            </label>
+
+            <br>
+
+            <input
+                type="text"
+                id="studentId"
+                name="studentId"
+                placeholder="Enter Student ID"
+                required
+            >
+
+            <br></br>
+
+            <label for="password">
+                Password
+            </label>
+
+            <br>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter Password"
+                required
+            >
+
+            <br></br>
+
+            <input
+                type="checkbox"
+                name="remember"
+            >
+            Remember Me
+
+        </label>
+
+        <br></br>
+
+        <a href="#">
+            Forgot Password ?
+        </a>
+
+        <br></br>
+
+        <button type="Submit">
+            Sign in
+        </button>
+
+        </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!--======STUDENT ERP DASHBOARD======-->
+
+    <section>
+
+        <h2>Student Dashboard</h2>
+
+        <nav>
+            <ul>
+                <li> 
+                    <a href=""#dashboard">
+                        🏠 Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#profile">
+                        👤 Profile
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#attendence">
+                        📊 Attendence
+                    </a>                
+                </li>
+
+                <li>
+                    <a href="#fees">
+                        💵 Fees
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#result">
+                        📚 Results
+                    </a>
+                </li>
+
+                <li>
+                    <a href=""#examform">
+                        📝 Exam Form
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#admit-card">
+                        🎫 Admit Card
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#notices">
+                        🔔 Notices
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#logout">
+                        🚪 Logout
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+
+        <!--DASHBOARD-->
+
+        <section id="dashboard">
+
+            <h2>🏠 Dashboard</h2>
+
+            <p>
+                Welcome to your student dashboard.
+            </p>
+
+        </section>
+
+        <section id="profile">
+
+            <h2>👤 Student Profile</h2>
+
+            <p> Name: Sajid Saifi</p>
+            <p> Student ID: SIT20260920</p>
+            <p> Course: B.Tech CSE</p>
+            <p> Semester: 8</p>
+        
+        </section>
+
+        <!--ATTENDENCE-->
+
+        <section id="attendence">
+
+            <h2>📊 Attendence</h2>
+
+            <p> Overall Attendance: 85% </p>
+
+        </section>
+
+        <!--FEES-->
+
+        <section id="fees">
+
+            <h2>💵 Fees</h2>
+
+            <p> Total Fees: $5000 </p>
+            <p> Paid: $4000 </p>
+            <p> Due: $1000 </p>
+
+        </section>
+
+        <!--RESULTS-->
+
+        <section id="result">
+
+            <h2>📚 Results</h2>
+
+            <p> CGPA : 8.34 </p>
+
+        </section>
+
+        <!--EXAM FORM-->
+
+        <section id="examform">
+
+            <h2>📝 Exam Form</h2>
+            
+            <form>
+
+                <label>
+                    Student Name:
+                </label>
+
+                <input 
+                    type="text" 
+                    value="Sajid Saifi"
+                >
+
+                <br><br>
+
+                <label>
+                    Semester:
+                </label>
+
+                <select>
+
+                    <option>
+                        6th Semester
+                    </option>
+
+                    <option>
+                        8th Semester
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <button type="submit">
+                    Submit Exam Form
+                </button>
+
+            </form>
+
+        </section>
+
+        <!--ADMIT CARD-->
+
+        <section id="admit-card">
+
+            <h2>🎫 Admit Card</h2>
+
+            <p> 
+                Student: Sajid Saifi
+            </p>
+
+            <p>
+                Student ID: SIT20260920
+            </p>
+
+            <p> 
+                Course: B.Tech CSE
+            </p>
+
+            <form>
+
+                <label>
+                        Semester:
+                </label>
+
+                <select>
+
+                    <option>
+                        6th Semester
+                    </option>
+
+                    <option>
+                        8th Semester
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <button>
+                    Download Admit Card
+                </button>
+
+            </form>
+
+        </section>
+
+        <!--NOTICES-->
+
+        <section id="notices">
+            
+            <h2>🔔 Notices</h2>
+
+            <article>
+
+                <h3>
+                    Fees Notice 
+                </h3>
+
+                <p>
+                   Please clear your pending fees at the earliest.
+                </p>
+
+            </article>
+            
+            <article>
+
+                <h3>
+                    Examination Notice
+                </h3>
+
+                <p>
+                    The exam form submission deadline is approaching. Please submit your exam forms before the due date.
+                </p>
+
+            </article>
+            
+        </section>
+
+        <!--LOGOUT-->
+
+        <section id="logout">
+
+            <h2>🚪 Logout</h2>
+
+            <p> Are you sure you want to logout?</p>
+
+            <button>               
+                Logout
+            </button>
+
+        </section>
+
+    </section>
+
+</body>
+
+</html>
